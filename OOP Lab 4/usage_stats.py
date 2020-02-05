@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 
 class UsageStats:
@@ -37,12 +37,12 @@ class UsageStats:
     def increment_usage_stats(self):
         """ update the play count and last played time when a song is played """
         self._play_count += 1
-        self._last_played = datetime.date.today()
+        self._last_played = datetime.now()
 
     @classmethod
     def __valid_datetime(cls, date):
         """ private method to validate the date is datetime object """
-        if not isinstance(date, datetime.date):
+        if not isinstance(date, datetime):
             return False
         else:
             return True

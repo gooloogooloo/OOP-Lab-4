@@ -1,5 +1,5 @@
 from audio_file import AudioFile
-import datetime
+from datetime import datetime
 
 
 class Podcast(AudioFile):

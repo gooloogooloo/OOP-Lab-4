@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 from usage_stats import UsageStats
 from abc import abstractmethod
 
@@ -9,8 +9,8 @@ class AudioFile:
 
 
     Class: ACIT 2515
-    Author: Nicholas Janus
-    ID: A01179897
+    Group: Project - 13
+    Authors: Nicholas Janus(A01179897), Anmol Anand(A0117484), Felix Ruttan(A012)
     """
     def __init__(self, title: str, artist: str, runtime: str, pathname: str, filename: str) -> None:
         """Creates new song instance."""
@@ -20,7 +20,7 @@ class AudioFile:
         self._pathname = pathname
         self._filename = filename
         self._user_rating = ""
-        self._usage = UsageStats(datetime.date.today())
+        self._usage = UsageStats(datetime.now())
 
     def get_location(self) -> str:
         return self._pathname

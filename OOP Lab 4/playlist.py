@@ -1,7 +1,8 @@
 from audio_file import AudioFile
 from usage_stats import UsageStats
-import datetime
+from datetime import datetime
 from typing import Union
+from song import Song
 
 
 class Playlist:
@@ -17,7 +18,7 @@ class Playlist:
         self._description = description
 
         self._playlist = []
-        self._usage = UsageStats(datetime.date.today())
+        self._usage = UsageStats(datetime.now())
 
     def add_song(self, song: Song, posn: int = None) -> None:
         """ adds song to playlist instance either by position or to the end of list"""
