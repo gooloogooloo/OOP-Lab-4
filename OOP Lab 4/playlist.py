@@ -9,8 +9,8 @@ class Playlist:
     """ represents a playlist
 
     Class: ACIT 2515
-    Author: Nicholas Janus
-    ID: A01179897
+    Group: Project - 13
+    Authors: Nicholas Janus(A01179897), Anmol Anand(A0117484), Felix Ruttan(A01070306)
     """
     def __init__(self, name: str, description: str):
         """ creates playlist instance """

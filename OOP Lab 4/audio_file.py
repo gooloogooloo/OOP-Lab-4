@@ -10,7 +10,7 @@ class AudioFile:
 
     Class: ACIT 2515
     Group: Project - 13
-    Authors: Nicholas Janus(A01179897), Anmol Anand(A0117484), Felix Ruttan(A012)
+    Authors: Nicholas Janus(A01179897), Anmol Anand(A0117484), Felix Ruttan(A01070306)
     """
     def __init__(self, title: str, artist: str, runtime: str, pathname: str, filename: str) -> None:
         """Creates new song instance."""
